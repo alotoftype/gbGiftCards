@@ -1,0 +1,12 @@
+html {
+    font-size: $font-size;
+}
+
+main,
+footer {
+    @include font-size(1.6);
+
+    @include tablet {
+        @include font-size(1.8)
+    }
+}
