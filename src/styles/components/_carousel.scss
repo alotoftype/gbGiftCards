@@ -27,14 +27,20 @@
   }
 }
 .carousel {
-    margin-top: .8rem;
-    overflow: hidden;
+  margin-top: .8rem;
+    @include desktop {
+      overflow: hidden;
+    }
     img {
-        width: calc(100% );
-        max-width: 128rem;
-        height: 40rem;
+        width: 100%;
+        
+        
         margin-right: 10px;
         filter: grayscale(100%);
+        @include desktop {
+          height: 40rem;
+          
+        }
         &.is-selected{
             filter: grayscale(0);
             transition: filter .5s linear;

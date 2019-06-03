@@ -4,3 +4,9 @@ main {
 .main {
     @extend .section
 }
+.gc-form {
+@include desktop{
+    width: 60%;
+    margin: 0 auto;
+}
+}
